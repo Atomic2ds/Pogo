@@ -27,6 +27,15 @@ def embedutil(name, content):
             embed.add_field(inline=False,name="Be Respectful to server members",value="Don't be a bitch and constantly make fun of, mock or make fun of someone for something irrelevant or small")
             embed.add_field(inline=False,name="No doxxing or exposing personal info",value="You are not allowed to send other peoples personal information to chat like peoples ip addresses, house addresses, peoples fact or any of that")
 
+    if name == "core":
+        if content[0] == "update":
+            title = content[1]
+            description = content[2]
+            interaction = content[3]
+            embed = discord.Embed(title=title, description=description, colour=0xFFFFFF)
+            embed.set_author(name=interaction.user.name.capitalize() + "・Staff Member", icon_url=interaction.user.avatar)
+            embed.set_footer(text=interaction.guild.name)
+
     return embed
 
 
