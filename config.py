@@ -14,10 +14,10 @@ class BotClient(commands.Bot):
         intents = discord.Intents.all()
         super().__init__(command_prefix=commands.when_mentioned_or(">"), intents=intents)
     async def setup_hook(self) -> None:
-       #self.add_view(application_panel_buttons())
-       #self.add_view(learnmoreview())
-       #self.add_view(submittedview())
-       #self.add_view(rulesview())
-        pass
+       from views.send import application_panel_buttons, learnmoreview, submittedview, rulesview
+       self.add_view(application_panel_buttons())
+       self.add_view(learnmoreview())
+       self.add_view(submittedview())
+       self.add_view(rulesview())
 
 bot = BotClient()
