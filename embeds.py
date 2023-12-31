@@ -28,3 +28,8 @@ def embedutil(name, content):
             embed.add_field(inline=False,name="No doxxing or exposing personal info",value="You are not allowed to send other peoples personal information to chat like peoples ip addresses, house addresses, peoples fact or any of that")
 
     return embed
+
+
+def errorembed(message, command): 
+  em = discord.Embed(title=f"An error occured -_-", description=f"There was an error when running {command}\nI have automaticlly reported the error to the Bot Devs```{message}```")
+  return em

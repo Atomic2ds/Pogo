@@ -1,2 +1,5 @@
 .env
 /__pycache__
+/functions/__pycache__
+/cogs/__pycache__
+/views/__pycache__
