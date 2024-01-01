@@ -7,7 +7,7 @@ def embedutil(name, content):
             embed = discord.Embed(colour=0xFFFFFF, title="How our playground server works", description="You can apply for a bot to be made and we will make it for you, host it for you, update it for you and basically manage everything for you.")
             embed.add_field(name="You should know",value="We cannot make anything big, like a big public bot with a web dashboard, custom domain and all that we just make simple little fun bots as a hobby project")
         elif content == "hosting":
-            embed = discord.Embed(colour=0xFFFFFF, title="How we host the bots", description="We host your bots on a premium virtual private server in Frankfurt, Germany with 1Gbit networking, high performance 3.60GHz CPU and Raid1 NVMe Storage with daily backups going back 5 days")
+            embed = discord.Embed(colour=0xFFFFFF, title="How we host the bots", description="We take advantage of A3D's reliable cloud platform located in Frankfurt, Germany with nearly 100% uptime and a public service status page. Their servers run powerful enterprise processers, ecc memory, nvme ssds, 10 gigabit networking and much more")
         elif content == "process":
             embed = discord.Embed(colour=0xFFFFFF, title="How the application process works", description="Once we review your bot creation request, we will dm you letting you know if your bot is being created or if your bot is not being created. We will then tell you an eta of how long it will take. Once your bot is finished we will dm you an invite link to your bot and will let you know when its finished")
 
